@@ -11,6 +11,14 @@
   .intro p,.section.split p,#atmosphere p{-webkit-text-size-adjust:100%;text-size-adjust:100%}
 }
 @media (max-width: 599px), (max-width: 960px) and (max-height: 500px) and (orientation: landscape) and (pointer: coarse) {
+  .hero .eyebrow {
+    font-size: 15px;
+  }
+
+  .menu-card p {
+    font-size: 15px;
+  }
+
   .topbar {
     column-gap: 16px;
   }
@@ -43,11 +51,27 @@
     padding-block: 12px;
   }
 }
+.tablet-menu-break {
+  display: none;
+}
+
+@media (min-width: 600px) and (max-width: 1024px) and (min-height: 501px),
+       (min-width: 1025px) and (max-width: 1366px) and (hover: none) and (pointer: coarse) {
+  .tablet-menu-break {
+    display: inline;
+  }
+}
+
+@media (min-width: 761px) and (max-width: 820px) and (min-height: 501px) {
+  .menu-card p {
+    margin-inline-end: 8px;
+  }
+}
 </style></head><body>
 <header class="topbar"><a class="brand" href="#home">喫茶 隠れ家</a><nav class="nav"><a href="#about">想い</a><a href="#menu">お品書き</a><a href="#access">店舗案内</a></nav></header>
 <main><section class="hero" id="home"><div class="hero-inner"><div class="eyebrow">珈琲と、静かなひととき。</div><h1>古民家で味わう、<br>心ほどけるひととき。</h1><p><span class="heading-phrase">木のぬくもりと庭の緑、</span><span class="heading-phrase">淹れたての珈琲。</span></p><a class="pill" href="#about">隠れ家を知る　↓</a></div></section>
 <section class="section intro" id="about"><div class="section-label">OUR STORY</div><h2><span class="heading-phrase">昔ながらの家で、</span><span class="heading-phrase">何もしない贅沢を。</span></h2><p><span class="copy-phrase">慌ただしい毎日から、</span><span class="copy-phrase">ほんの少し離れて。</span><br><span class="copy-phrase">古い梁や障子、</span><span class="copy-phrase">縁側から差し込む</span><span class="copy-phrase">やわらかな光。</span><br><span class="copy-phrase">一杯の珈琲と、</span><span class="copy-phrase">お気に入りの本があればいい。</span><br><span class="copy-phrase">庭を眺めて深呼吸。</span><span class="copy-phrase">「喫茶 隠れ家」は、</span><span class="copy-phrase">そんな時間を大切にする</span><span class="copy-phrase">古民家喫茶です。</span></p></section>
 <img class="photo-wide" src="images/kominka-room.webp" alt="淹れたての珈琲を楽しむひととき">
 <section class="section split"><div><div class="section-label">A CUP OF COMFORT</div><h2>古い家で、<br>珈琲をゆっくり。</h2><p><span class="copy-phrase">香りが立ちのぼるまでの時間も、</span><span class="copy-phrase">味わいのひとつ。</span><br class="small-screen-break"><span class="copy-phrase">ゆっくりと淹れた珈琲に、</span><span class="copy-phrase">どこか懐かしい甘味を添えて。</span><span class="copy-phrase">今日の気分に合う、</span><span class="copy-phrase">あなたの定番を</span><span class="copy-phrase">見つけてください。</span></p></div><img src="images/coffee.webp" alt="香り豊かなコーヒー"></section>
-<section class="section" id="atmosphere"><div class="section-label" style="text-align:center">THE SPACE</div><h2 class="gallery-title"><span class="heading-phrase">縁側と、庭と、</span><span class="heading-phrase">古い木の香り。</span></h2><p style="text-align:center;color:#6e685d"><span class="copy-phrase">季節の移ろいを感じながら、</span><span class="copy-phrase">思い思いの時間を。</span></p><div class="gallery"><img src="images/garden.webp" alt="庭を望む縁側"><img src="images/seating.webp" alt="木のぬくもりを感じる店内"><img src="images/window.webp" alt="窓辺の席"></div></section><section class="section menu" id="menu"><div class="menu-wrap"><div class="section-label">MENU</div><h2>隠れ家のお品書き</h2><div class="menu-grid"><article class="menu-card"><img src="images/coffee.webp" alt="ブレンド珈琲"><h3>隠れ家ブレンド</h3><p>芳醇な香りと、やさしい余韻。</p><div class="price">¥550</div></article><article class="menu-card"><img src="images/sweets.webp" alt="喫茶の甘味"><h3>季節の甘味</h3><p>珈琲と楽しむ、季節のおやつ。</p><div class="price">¥600〜</div></article><article class="menu-card"><div class="menu-photo-crop"><img src="images/mixed-sandwich.webp" alt="玉子とハム、野菜のミックスサンド"></div><h3>ミックスサンド</h3><p>玉子・ハム・野菜を挟んだ、<br>懐かしい喫茶店の定番。</p><div class="price">¥750〜</div></article></div><p class="note">※メニュー・価格はLPデザイン用の架空設定です。</p></div></section>
+<section class="section" id="atmosphere"><div class="section-label" style="text-align:center">THE SPACE</div><h2 class="gallery-title"><span class="heading-phrase">縁側と、庭と、</span><span class="heading-phrase">古い木の香り。</span></h2><p style="text-align:center;color:#6e685d"><span class="copy-phrase">季節の移ろいを感じながら、</span><span class="copy-phrase">思い思いの時間を。</span></p><div class="gallery"><img src="images/garden.webp" alt="庭を望む縁側"><img src="images/seating.webp" alt="木のぬくもりを感じる店内"><img src="images/window.webp" alt="窓辺の席"></div></section><section class="section menu" id="menu"><div class="menu-wrap"><div class="section-label">MENU</div><h2>隠れ家のお品書き</h2><div class="menu-grid"><article class="menu-card"><img src="images/coffee.webp" alt="ブレンド珈琲"><h3>隠れ家ブレンド</h3><p>芳醇な香りと、<br class="tablet-menu-break">やさしい余韻。</p><div class="price">¥550</div></article><article class="menu-card"><img src="images/sweets.webp" alt="喫茶の甘味"><h3>季節の甘味</h3><p>珈琲と楽しむ、<br class="tablet-menu-break">季節のおやつ。</p><div class="price">¥600〜</div></article><article class="menu-card"><div class="menu-photo-crop"><img src="images/mixed-sandwich.webp" alt="玉子とハム、野菜のミックスサンド"></div><h3>ミックスサンド</h3><p>玉子・ハム・野菜を挟んだ、<br>懐かしい喫茶店の定番。</p><div class="price">¥750〜</div></article></div><p class="note">※メニュー・価格はLPデザイン用の架空設定です。</p></div></section>
 <section class="section access" id="access"><div class="split"><div><div class="section-label">VISIT US</div><h2>ふらりと、<br>お立ち寄りください。</h2><p>ひとりでも、誰かと一緒でも。<br>思い思いの時間を、<br>お過ごしください。</p><dl><dt>店名</dt><dd>喫茶 隠れ家</dd><dt>営業時間</dt><dd>10:00–17:00（サンプル）</dd><dt>定休日</dt><dd>水曜日（サンプル）</dd><dt>所在地</dt><dd>架空店舗につき住所設定なし</dd></dl><div class="sample">このページは Pidam Gallery のホームページ制作実績として制作した架空店舗のLPサンプルです。実在する店舗ではありません。</div></div><div class="entrance-visual"><img src="images/entrance-noren.webp" alt="喫茶 隠れ家と染められた生成りののれんが掛かる古民家喫茶の入口"></div></div></section></main><footer>© Pidam Gallery | Concept LP Sample — 喫茶 隠れ家<p class="footer-sample-label">架空店舗・制作サンプル</p></footer></body></html>
